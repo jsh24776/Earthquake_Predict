@@ -7,8 +7,8 @@ def preprocess_input(df_raw, training=False):
 
     # Load all preprocessors and column lists
     import os
-   file_path = os.path.join(os.path.dirname(__file__), 'scaler.joblib')
-   scaler = joblib.load(file_path)
+    file_path = os.path.join(os.path.dirname(__file__), 'scaler.joblib')
+    scaler = joblib.load(file_path)
     num_imputer = joblib.load('num_imputer.joblib')
 
     # The features.joblib saved in nOkF82Xv2mKV is X.columns.tolist() which are the FINAL OHE features for the UI-safe model.
